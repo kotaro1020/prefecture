@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>二択問題アプリ</title>
+
+    <!-- jQuery -->
+    <script src="lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>二択問題アプリ(岐阜県)</h1>
+
+      <!-- 問題パネル1 -->
+      <div class="panel panel-default" id="pnl1">
+        <div class="panel-heading"><b>問題1.　岐阜県の伝統的な魔よけの人形は？</b></div>
+        <div class="panel-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="1" /> さるぼぼ
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="2" /> 赤べこ
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 問題パネル2 -->
+      <div class="panel panel-default" id="pnl2">
+        <div class="panel-heading"><b>問題2.　岐阜県に関する話、どっちが本当？</b></div>
+        <div class="panel-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="1" /> 日本で一番火山が多い
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="2" /> 大阪府より面積の広い市がある
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 問題パネル3 -->
+      <div class="panel panel-default" id="pnl3">
+        <div class="panel-heading"><b>問題3.　岐阜県の郷土料理「けいちゃん」は、何肉を使った料理？</b></div>
+        <div class="panel-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="1" /> 牛肉
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="2" /> とり肉
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ボタン -->
+      <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" id="btnCheck">
+          結果を見る
+        </button>
+      </div>
+
+      <!-- 結果出力 -->
+      <div class="panel panel-default">
+        <div class="panel-heading"><b> </b></div>
+        <div class="panel-body" id="res">?</div>
+        <div class="panel-footer"><b> </b></div>
+      </div>
+    </div>
+  </body>
+</html>
